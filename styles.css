@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #F7F9FA;
+  color: #1B2A41;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #1B2A41;
+  color: #F7F9FA;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #2DD4BF;
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #16233a;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: #F7F9FA;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2DD4BF;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #dfe4e8;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #1B2A41;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #2DD4BF;
+  border-radius: 2px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skills-list li {
+  background-color: #1B2A41;
+  color: #F7F9FA;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-list a {
+  color: #1B2A41;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #2DD4BF;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: #2DD4BF;
+}
+
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1B2A41;
+  color: #F7F9FA;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .site-nav {
+    gap: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
